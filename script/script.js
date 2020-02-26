@@ -1,35 +1,36 @@
 const Config = {
-    name: "user",
+    name: "pct",
     scale: 1,
     Links: [
         [
-            "site",
+            "cloud",
             [
-                ["link", "https://www.example.com"],
-                ["link", "https://www.example.com"]
+                ["dropbox", "https://www.dropbox.com/h"],
+                ["googleDrive", "https://drive.google.com/drive/"]
             ]
         ],
         [
-            "site",
+            "tech",
             [
-                ["link", "https://www.example.com"],
-                ["link", "https://www.example.com"]
+                ["github", "https://github.com/"],
+                ["adafruitIO", "https://io.adafruit.com/DeckardKane/dashboards"],
+                ["paperspace", "https://www.paperspace.com/console/machines"]
             ]
         ],
         [
-            "site",
+            "MICA",
             [
-                ["link", "https://www.example.com"],
-                ["link", "https://www.example.com"],
-                ["link", "https://www.example.com"]
+                ["canvas", "https://mica.instructure.com/"],
+                ["workday", "https://wd5.myworkday.com/mica/d/home.htmld"],
+                ["gearCheckout", "https://checkout.mica.edu/patron"]
             ]
         ],
         [
-            "site",
+            "general",
             [
-                ["link", "https://www.example.com"],
-                ["link", "https://www.example.com"],
-                ["link", "https://www.example.com"],
+                ["gmail", "https://mail.google.com/mail/u/0/"],
+                ["calendar", "https://calendar.google.com/calendar/b/1/r?pli=1"],
+                ["infinity", "https://app.startinfinity.com/home"],
                 ["link", "https://www.example.com"]
             ]
         ]
@@ -53,9 +54,9 @@ const Main = (() => {
                         </li>`
                     ).join("")}
                 </ul>
-            </li>` 
+            </li>`
         ).join("")
-        
+
         names.forEach(el => {
             el.innerText = Config.name;
         });
