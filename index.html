@@ -9,6 +9,11 @@
 
 <body>
     <main>
+        <div class="prompt">[<span data-Name>user</span>@<span>home</span> ~]$ whoami</div>
+        <!-- <div class="prompt"> > Peter Turnbull</div> -->
+        <div class="typewriter">
+          <h1>Peter Turnbull</h1>
+        </div>
         <div class="prompt">[<span data-Name>user</span>@<span>home</span> ~]$ tree</div>
         <div class="tree">
             <h1>.</h1>
@@ -22,7 +27,8 @@
 
         <form action="https://duckduckgo.com/" method="GET" autocomplete="off">
             <h1>search:&nbsp;</h1>
-            <textarea type="text" name="q" id="search" wrap="hard" autofocus></textarea>
+            <input type="text" name="q" id="search" wrap="hard" autofocus="autofocus">
+            <!--<textarea type="text" name="q" id="search" wrap="hard" autofocus></textarea> -->
         </form>
     </main>
 </body>

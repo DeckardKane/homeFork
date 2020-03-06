@@ -6,10 +6,14 @@
 :root {
     --font: "Roboto Mono";
     --background: #0f0e17;
-    --foreground: #fffffe;
+    /*--foreground: #fffffe;*/
+    --foreground:	#D3D3D3;
     --pink: #e53170;
+    --span: #74aa04;
     --red: #f25f4c;
+    --headerColor: #8dd006;
     --orange: #ff8906;
+    --hover: #0383f5;
     --branch: 1px solid #a7a9be;
 }
 
@@ -26,6 +30,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /*
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    */
 }
 
 .prompt {
@@ -38,7 +48,7 @@ body {
 }
 
 span {
-    color: var(--pink);
+    color: var(--span);
 }
 
 h1 {
@@ -46,7 +56,7 @@ h1 {
     font-family: var(--font);
     font-size: 1rem;
     font-weight: normal;
-    color: var(--red);
+    color: var(--headerColor);
     cursor: pointer;
 }
 
@@ -102,7 +112,7 @@ a {
 a:hover,
 a:focus {
     color: var(--background);
-    background: var(--orange);
+    background: var(--hover);
 }
 
 form h1 {
@@ -110,6 +120,7 @@ form h1 {
 }
 
 /* you can fill the texarea above/below? the Viewport */
+/* Unsure why this one behaves so oddly.
 #search {
     font-family: var(--font);
     font-size: 1rem;
@@ -122,4 +133,37 @@ form h1 {
     height: 50vh;
     word-break: break-all;
     resize: none;
+}
+*/
+
+#search {
+  font-family: var(--font);
+  font-size: 1rem;
+  color: var(--foreground);
+  background-color: var(--background);
+  border: none;
+}
+
+.typewriter h1 {
+  display: flex;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  /* margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(100, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
