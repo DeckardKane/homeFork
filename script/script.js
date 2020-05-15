@@ -31,6 +31,7 @@ const Config = {
                 ["gmail", "https://mail.google.com/mail/u/0/"],
                 ["calendar", "https://calendar.google.com/calendar/b/1/r?pli=1"],
                 ["infinity", "https://app.startinfinity.com/home"],
+                ["notion", "https://www.notion.so/Personal-Home-f429d5af08c846f99a28939e07295235"],
                 ["link", "https://www.example.com"]
             ]
         ]
